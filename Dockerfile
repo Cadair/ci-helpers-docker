@@ -1,7 +1,7 @@
 FROM continuumio/miniconda
 
 RUN apt-get update --fix-missing && apt-get install -y gcc libatlas-dev \
-    liblapack-dev gfortran graphviz texlive-latex-extra dvipng && apt-get clean
+    liblapack-dev gfortran graphviz texlive-latex-extra dvipng build-essential && apt-get clean
 
 RUN ln -s /opt/conda /root/miniconda
 
