@@ -1,4 +1,4 @@
-FROM continuumio/miniconda
+FROM continuumio/miniconda3
 
 RUN apt-get update --fix-missing && apt-get install -y gcc libatlas-dev \
     liblapack-dev gfortran graphviz texlive-latex-extra dvipng build-essential && apt-get clean
